@@ -1,0 +1,2858 @@
+---------------------------------------------------------------
+[ 2019-05-03T20:28:56+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin
+[ info ] localhost/cms/public/index.php/admin [运行时间：0.104291s][吞吐率：9.59req/s] [内存消耗：2,196.83kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:28:59+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/login/index.html
+[ info ] localhost/cms/public/index.php/admin/login/index.html [运行时间：0.038503s][吞吐率：25.97req/s] [内存消耗：2,198.52kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /Applications/MAMP/htdocs/cms/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/login/login.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:28:59+08:00 ] 0.0.0.0 GET /cms/public/index.php/captcha.html
+[ info ] localhost/cms/public/index.php/captcha.html [运行时间：0.095920s][吞吐率：10.43req/s] [内存消耗：1,945.77kb] [文件加载：56]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'image/webp,*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/login/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /Applications/MAMP/htdocs/cms/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:29:03+08:00 ] 0.0.0.0 POST /cms/public/index.php/admin/login/index.html
+[ info ] localhost/cms/public/index.php/admin/login/index.html [运行时间：0.124410s][吞吐率：8.04req/s] [内存消耗：3,227.55kb] [文件加载：75]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'uname' => 'admin',
+  'password' => 'admin',
+  'code' => '727',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /Applications/MAMP/htdocs/cms/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000700s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.051323s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `uname` = 'admin' LIMIT 1 [ RunTime:0.002281s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:29:05+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/index/index.html
+[ info ] localhost/cms/public/index.php/admin/index/index.html [运行时间：0.157501s][吞吐率：6.35req/s] [内存消耗：3,043.11kb] [文件加载：74]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/login/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/index/index.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000511s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.002602s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.001345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.004480s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.004818s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.002917s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.001788s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.001003s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000698s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:29:05+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.080886s][吞吐率：12.36req/s] [内存消耗：1,928.26kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:30:00+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/admin/lst.html
+[ info ] localhost/cms/public/index.php/admin/admin/lst.html [运行时间：0.076631s][吞吐率：13.05req/s] [内存消耗：3,146.02kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/admin/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'adminRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000704s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`uname`,`a`.`create_time`,`a`.`last_time`,`a`.`status`,`g`.`title` FROM `tp_admin` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` LIMIT 0,5 [ RunTime:0.000625s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:30:00+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.034865s][吞吐率：28.68req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:30:02+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/content/lst.html
+[ info ] localhost/cms/public/index.php/admin/content/lst.html [运行时间：0.115536s][吞吐率：8.66req/s] [内存消耗：3,180.88kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'content',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/admin/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Content->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/Content.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/content/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'modelId',
+  4 => 'cateId',
+  5 => 'artResult',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000836s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.002770s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_archives` `a` INNER JOIN `tp_cate` `c` ON `a`.`cate_id`=`c`.`id` INNER JOIN `tp_model` `m` ON `m`.`id`=`c`.`model_id` LIMIT 1 [ RunTime:0.004691s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`title`,`a`.`attr`,`a`.`cate_id`,`a`.`model_id`,`c`.`cate_name`,`m`.`model_name` FROM `tp_archives` `a` INNER JOIN `tp_cate` `c` ON `a`.`cate_id`=`c`.`id` INNER JOIN `tp_model` `m` ON `m`.`id`=`c`.`model_id` ORDER BY a.id desc LIMIT 0,5 [ RunTime:0.001726s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:30:03+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.032461s][吞吐率：30.81req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:30:03+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/content/addselect.html
+[ info ] localhost/cms/public/index.php/admin/content/addselect.html [运行时间：0.066483s][吞吐率：15.04req/s] [内存消耗：3,402.45kb] [文件加载：76]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'content',
+    2 => 'addselect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/content/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Content->addSelect[ /Applications/MAMP/htdocs/cms/application/admin/controller/Content.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/content/add_select.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'cateRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000871s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`model_name` FROM `tp_cate` `a` INNER JOIN `tp_model` `b` ON `a`.`model_id`=`b`.`id` ORDER BY sort desc [ RunTime:0.000952s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:30:03+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.034560s][吞吐率：28.94req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:30:06+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/model/lst.html
+[ info ] localhost/cms/public/index.php/admin/model/lst.html [运行时间：0.062263s][吞吐率：16.06req/s] [内存消耗：3,136.84kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/content/addselect.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Model->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/Model.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/model/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'modelRes',
+  4 => 'prefix',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000578s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_model` [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_model` LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_model` ORDER BY id desc LIMIT 0,3 [ RunTime:0.000439s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:30:06+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.037313s][吞吐率：26.80req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:30:07+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/model/add.html
+[ info ] localhost/cms/public/index.php/admin/model/add.html [运行时间：0.056826s][吞吐率：17.60req/s] [内存消耗：3,060.80kb] [文件加载：74]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/model/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Model->add[ /Applications/MAMP/htdocs/cms/application/admin/controller/Model.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/model/add.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000718s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000507s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:30:07+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.034162s][吞吐率：29.27req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:30:09+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/model_fields/add.html
+[ info ] localhost/cms/public/index.php/admin/model_fields/add.html [运行时间：0.057119s][吞吐率：17.51req/s] [内存消耗：3,071.89kb] [文件加载：74]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/model/add.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ /Applications/MAMP/htdocs/cms/application/admin/controller/ModelFields.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/model_fields/add.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'modelRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000600s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_model` [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT `id`,`model_name` FROM `tp_model` [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:30:09+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.040072s][吞吐率：24.95req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:30:11+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/model_fields/lst.html
+[ info ] localhost/cms/public/index.php/admin/model_fields/lst.html [运行时间：0.107979s][吞吐率：9.26req/s] [内存消耗：3,158.86kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/model_fields/add.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ModelFields->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/ModelFields.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/model_fields/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'fieldRes',
+  4 => 'prefix',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000566s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_model_field` [ RunTime:0.002711s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_model_field` `a` INNER JOIN `tp_model` `b` ON `a`.`model_id`=`b`.`id` LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`model_name`,`b`.`table_name` FROM `tp_model_field` `a` INNER JOIN `tp_model` `b` ON `a`.`model_id`=`b`.`id` LIMIT 0,10 [ RunTime:0.001428s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:30:11+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.045647s][吞吐率：21.91req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:30:14+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/conf/lst.html
+[ info ] localhost/cms/public/index.php/admin/conf/lst.html [运行时间：0.062583s][吞吐率：15.98req/s] [内存消耗：3,138.50kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'conf',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/model_fields/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Conf->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/Conf.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/conf/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'confRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000684s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.001032s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_conf` LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_conf` LIMIT 0,5 [ RunTime:0.000424s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:30:14+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.031621s][吞吐率：31.62req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:30:15+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/conf/conflst.html
+[ info ] localhost/cms/public/index.php/admin/conf/conflst.html [运行时间：0.056448s][吞吐率：17.72req/s] [内存消耗：3,113.85kb] [文件加载：74]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'conf',
+    2 => 'conflst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/conf/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Conf->conflst[ /Applications/MAMP/htdocs/cms/application/admin/controller/Conf.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/conf/conflst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'confRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000654s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.001076s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_conf` [ RunTime:0.000486s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:30:15+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.031832s][吞吐率：31.41req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:30:19+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/content/lst.html
+[ info ] localhost/cms/public/index.php/admin/content/lst.html [运行时间：0.058441s][吞吐率：17.11req/s] [内存消耗：3,180.88kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'content',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/conf/conflst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Content->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/Content.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/content/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'modelId',
+  4 => 'cateId',
+  5 => 'artResult',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000672s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_archives` `a` INNER JOIN `tp_cate` `c` ON `a`.`cate_id`=`c`.`id` INNER JOIN `tp_model` `m` ON `m`.`id`=`c`.`model_id` LIMIT 1 [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`title`,`a`.`attr`,`a`.`cate_id`,`a`.`model_id`,`c`.`cate_name`,`m`.`model_name` FROM `tp_archives` `a` INNER JOIN `tp_cate` `c` ON `a`.`cate_id`=`c`.`id` INNER JOIN `tp_model` `m` ON `m`.`id`=`c`.`model_id` ORDER BY a.id desc LIMIT 0,5 [ RunTime:0.000683s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:30:19+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.031733s][吞吐率：31.51req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:30:58+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/content/lst.html?page=4
+[ info ] localhost/cms/public/index.php/admin/content/lst.html?page=4 [运行时间：0.071848s][吞吐率：13.92req/s] [内存消耗：3,181.44kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'content',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/content/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '4',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Content->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/Content.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/content/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'modelId',
+  4 => 'cateId',
+  5 => 'artResult',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000721s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.001034s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_archives` `a` INNER JOIN `tp_cate` `c` ON `a`.`cate_id`=`c`.`id` INNER JOIN `tp_model` `m` ON `m`.`id`=`c`.`model_id` LIMIT 1 [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`title`,`a`.`attr`,`a`.`cate_id`,`a`.`model_id`,`c`.`cate_name`,`m`.`model_name` FROM `tp_archives` `a` INNER JOIN `tp_cate` `c` ON `a`.`cate_id`=`c`.`id` INNER JOIN `tp_model` `m` ON `m`.`id`=`c`.`model_id` ORDER BY a.id desc LIMIT 15,5 [ RunTime:0.000690s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:30:58+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.034926s][吞吐率：28.63req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:30:59+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/content/lst.html?page=1
+[ info ] localhost/cms/public/index.php/admin/content/lst.html?page=1 [运行时间：0.062367s][吞吐率：16.03req/s] [内存消耗：3,181.68kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'content',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/content/lst.html?page=4',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Content->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/Content.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/content/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'modelId',
+  4 => 'cateId',
+  5 => 'artResult',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000740s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_archives` `a` INNER JOIN `tp_cate` `c` ON `a`.`cate_id`=`c`.`id` INNER JOIN `tp_model` `m` ON `m`.`id`=`c`.`model_id` LIMIT 1 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`title`,`a`.`attr`,`a`.`cate_id`,`a`.`model_id`,`c`.`cate_name`,`m`.`model_name` FROM `tp_archives` `a` INNER JOIN `tp_cate` `c` ON `a`.`cate_id`=`c`.`id` INNER JOIN `tp_model` `m` ON `m`.`id`=`c`.`model_id` ORDER BY a.id desc LIMIT 0,5 [ RunTime:0.000880s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:31:00+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.035378s][吞吐率：28.27req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:31:03+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/model/lst.html
+[ info ] localhost/cms/public/index.php/admin/model/lst.html [运行时间：0.060803s][吞吐率：16.45req/s] [内存消耗：3,136.84kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/content/lst.html?page=1',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Model->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/Model.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/model/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'modelRes',
+  4 => 'prefix',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000673s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_model` [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_model` LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_model` ORDER BY id desc LIMIT 0,3 [ RunTime:0.000402s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:31:04+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.032888s][吞吐率：30.41req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:32:44+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/model_fields/lst.html
+[ info ] localhost/cms/public/index.php/admin/model_fields/lst.html [运行时间：0.060982s][吞吐率：16.40req/s] [内存消耗：3,158.86kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/model/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ModelFields->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/ModelFields.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/model_fields/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'fieldRes',
+  4 => 'prefix',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000678s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_model_field` [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_model_field` `a` INNER JOIN `tp_model` `b` ON `a`.`model_id`=`b`.`id` LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`model_name`,`b`.`table_name` FROM `tp_model_field` `a` INNER JOIN `tp_model` `b` ON `a`.`model_id`=`b`.`id` LIMIT 0,10 [ RunTime:0.000579s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:32:44+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.036397s][吞吐率：27.47req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:32:45+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/model_fields/add.html
+[ info ] localhost/cms/public/index.php/admin/model_fields/add.html [运行时间：0.057689s][吞吐率：17.33req/s] [内存消耗：3,071.89kb] [文件加载：74]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/model_fields/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ /Applications/MAMP/htdocs/cms/application/admin/controller/ModelFields.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/model_fields/add.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'modelRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000606s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000950s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_model` [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT `id`,`model_name` FROM `tp_model` [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:32:45+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.044345s][吞吐率：22.55req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:43:15+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/model_fields/add.html
+[ info ] localhost/cms/public/index.php/admin/model_fields/add.html [运行时间：0.066186s][吞吐率：15.11req/s] [内存消耗：3,071.89kb] [文件加载：74]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/model_fields/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ /Applications/MAMP/htdocs/cms/application/admin/controller/ModelFields.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/model_fields/add.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'modelRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000955s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.001340s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_model` [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT `id`,`model_name` FROM `tp_model` [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:43:15+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.040397s][吞吐率：24.75req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:43:17+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/model_fields/add.html
+[ info ] localhost/cms/public/index.php/admin/model_fields/add.html [运行时间：0.057472s][吞吐率：17.40req/s] [内存消耗：3,073.27kb] [文件加载：74]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/model_fields/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ModelFields->add[ /Applications/MAMP/htdocs/cms/application/admin/controller/ModelFields.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/model_fields/add.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'modelRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000598s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_model` [ RunTime:0.000949s ]
+[ sql ] [ SQL ] SELECT `id`,`model_name` FROM `tp_model` [ RunTime:0.000672s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:43:17+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.044344s][吞吐率：22.55req/s] [内存消耗：1,928.91kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:43:25+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin
+[ info ] localhost/cms/public/index.php/admin [运行时间：0.067974s][吞吐率：14.71req/s] [内存消耗：3,193.27kb] [文件加载：76]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/index/index.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000655s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000927s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.001106s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.001309s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000622s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:43:25+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.030037s][吞吐率：33.29req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:45:15+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin
+[ info ] localhost/cms/public/index.php/admin [运行时间：0.059358s][吞吐率：16.85req/s] [内存消耗：3,042.20kb] [文件加载：74]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/index/index.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000736s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000566s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:45:15+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.037654s][吞吐率：26.56req/s] [内存消耗：1,928.91kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:45:55+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin
+[ info ] localhost/cms/public/index.php/admin [运行时间：0.100999s][吞吐率：9.90req/s] [内存消耗：3,195.08kb] [文件加载：76]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/index/index.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000862s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.001378s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.001201s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.001192s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.001169s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.008892s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.006703s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.002166s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:45:55+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.048273s][吞吐率：20.72req/s] [内存消耗：1,928.91kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:46:03+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin
+[ info ] localhost/cms/public/index.php/admin [运行时间：0.053787s][吞吐率：18.59req/s] [内存消耗：3,042.20kb] [文件加载：74]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/index/index.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000604s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000590s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:46:03+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.033894s][吞吐率：29.50req/s] [内存消耗：1,928.91kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:46:19+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin
+[ info ] localhost/cms/public/index.php/admin [运行时间：0.052060s][吞吐率：19.21req/s] [内存消耗：2,935.73kb] [文件加载：73]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'con',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000864s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.001056s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SELECT `condition`,`name` FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000608s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:46:20+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/model_fields/add.html
+[ info ] localhost/cms/public/index.php/admin/model_fields/add.html [运行时间：0.052556s][吞吐率：19.03req/s] [内存消耗：2,962.68kb] [文件加载：73]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'con',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000625s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT `condition`,`name` FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000531s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:46:24+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/model_fields/lst.html
+[ info ] localhost/cms/public/index.php/admin/model_fields/lst.html [运行时间：0.053918s][吞吐率：18.55req/s] [内存消耗：2,964.63kb] [文件加载：73]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model_fields',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/model/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'con',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000762s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.001095s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT `condition`,`name` FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `type` = 1  AND `status` = 1 [ RunTime:0.001043s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:46:27+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/model/lst.html
+[ info ] localhost/cms/public/index.php/admin/model/lst.html [运行时间：0.067054s][吞吐率：14.91req/s] [内存消耗：3,305.50kb] [文件加载：79]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/content/lst.html?page=1',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Model->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/Model.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/model/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'modelRes',
+  4 => 'prefix',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000636s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_model` [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_model` LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_model` ORDER BY id desc LIMIT 0,3 [ RunTime:0.000401s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:46:27+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.077111s][吞吐率：12.97req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:46:27+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/model/lst.html
+[ info ] localhost/cms/public/index.php/admin/model/lst.html [运行时间：0.056885s][吞吐率：17.58req/s] [内存消耗：3,139.15kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'model',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/content/lst.html?page=1',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Model->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/Model.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/model/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'modelRes',
+  4 => 'prefix',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000599s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_model` [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_model` LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_model` ORDER BY id desc LIMIT 0,3 [ RunTime:0.000404s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:46:27+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.032108s][吞吐率：31.15req/s] [内存消耗：1,928.91kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:46:30+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/admin/lst.html
+[ info ] localhost/cms/public/index.php/admin/admin/lst.html [运行时间：0.067520s][吞吐率：14.81req/s] [内存消耗：3,315.73kb] [文件加载：79]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/model/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/admin/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'adminRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000686s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`uname`,`a`.`create_time`,`a`.`last_time`,`a`.`status`,`g`.`title` FROM `tp_admin` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` LIMIT 0,5 [ RunTime:0.000532s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:46:31+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.032189s][吞吐率：31.07req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:46:34+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/auth_rule/lst.html
+[ info ] localhost/cms/public/index.php/admin/auth_rule/lst.html [运行时间：0.066331s][吞吐率：15.08req/s] [内存消耗：3,567.54kb] [文件加载：78]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth_rule',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/admin/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\AuthRule->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/AuthRule.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/auth_rule/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'ruleTree',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000615s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` [ RunTime:0.000464s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:46:34+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.030533s][吞吐率：32.75req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:46:37+08:00 ] 0.0.0.0 POST /cms/public/index.php/admin/auth_rule/ajaxlst.html
+[ info ] localhost/cms/public/index.php/admin/auth_rule/ajaxlst.html [运行时间：0.063794s][吞吐率：15.68req/s] [内存消耗：3,227.09kb] [文件加载：74]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth_rule',
+    2 => 'ajaxlst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/auth_rule/lst.html',
+  'x-requested-with' => 'XMLHttpRequest',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\AuthRule->ajaxLst[ /Applications/MAMP/htdocs/cms/application/admin/controller/AuthRule.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000661s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT `id`,`pid` FROM `tp_auth_rule` [ RunTime:0.000458s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:46:38+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/auth_group/lst.html
+[ info ] localhost/cms/public/index.php/admin/auth_group/lst.html [运行时间：0.089339s][吞吐率：11.19req/s] [内存消耗：3,302.21kb] [文件加载：79]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth_group',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/auth_rule/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\AuthGroup->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/AuthGroup.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/auth_group/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'authGroupRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000870s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_auth_group` LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` LIMIT 0,3 [ RunTime:0.000373s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:46:38+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.039394s][吞吐率：25.38req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:46:39+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/auth_group/power/id/1.html
+[ info ] localhost/cms/public/index.php/admin/auth_group/power/id/1.html [运行时间：0.073340s][吞吐率：13.64req/s] [内存消耗：3,282.80kb] [文件加载：76]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth_group',
+    2 => 'power',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/auth_group/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\AuthGroup->power[ /Applications/MAMP/htdocs/cms/application/admin/controller/AuthGroup.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/auth_group/power.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'authGroup',
+  4 => 'data',
+  5 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000669s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 4 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 5 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 11 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 12 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 22 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 23 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 14 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 15 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 16 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 17 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 18 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 19 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 20 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 21 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000367s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:46:39+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.044131s][吞吐率：22.66req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:46:44+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/auth_group/lst.html
+[ info ] localhost/cms/public/index.php/admin/auth_group/lst.html [运行时间：0.057082s][吞吐率：17.52req/s] [内存消耗：3,139.66kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth_group',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/auth_group/power/id/1.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\AuthGroup->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/AuthGroup.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/auth_group/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'authGroupRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000629s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_auth_group` LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` LIMIT 0,3 [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:46:44+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.034725s][吞吐率：28.80req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T20:46:48+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/admin/lst.html
+[ info ] localhost/cms/public/index.php/admin/admin/lst.html [运行时间：0.057525s][吞吐率：17.38req/s] [内存消耗：3,147.95kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/auth_group/lst.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->lst[ /Applications/MAMP/htdocs/cms/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/admin/lst.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+  3 => 'adminRes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000659s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`uname`,`a`.`create_time`,`a`.`last_time`,`a`.`status`,`g`.`title` FROM `tp_admin` `a` INNER JOIN `tp_auth_group` `g` ON `a`.`group_id`=`g`.`id` LIMIT 0,5 [ RunTime:0.000430s ]
+---------------------------------------------------------------
+[ 2019-05-03T20:46:48+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.034162s][吞吐率：29.27req/s] [内存消耗：1,928.10kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=47eb1e0ddeadbd69230eacee4f3aa446',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File

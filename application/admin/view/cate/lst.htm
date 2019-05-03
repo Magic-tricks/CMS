@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html><head>
+	    <meta charset="utf-8">
+    <title>叶子空间</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Basic Styles-->
+    <link href="__ADMIN__/style/bootstrap.css" rel="stylesheet">
+    <link href="__ADMIN__/style/font-awesome.css" rel="stylesheet">
+    <link href="__ADMIN__/style/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__ADMIN__/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="__ADMIN__/style/demo.css" rel="stylesheet">
+    <link href="__ADMIN__/style/typicons.css" rel="stylesheet">
+    <link href="__ADMIN__/style/animate.css" rel="stylesheet">
+
+    <style>
+        .open{
+            border:1px solid #ccc;
+            padding:0 3px 0 3px;
+            cursor:pointer;
+        }
+    </style>
+    
+</head>
+<body>
+	<!-- 头部 -->
+    {include file="common/head"}
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
+            {include file="common/left"}
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="#">系统</a>
+                    </li>
+                                        <li class="active">栏目管理</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+                    
+<button type="button" tooltip="添加配置" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '{:url('add')}'"> <i class="fa fa-plus"></i> Add
+</button>
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-body">
+                <div class="flip-scroll">
+                    <form action="{:url('Cate/del_sort')}" method="post">
+                    <table class="table table-bordered table-hover">
+                        <thead class="">
+                            <tr pid="0">
+                                <th class="text-center">伸缩</th>
+                                <th class="text-center">
+                                    <label>
+                                        <input  class="colored-blue" id="checkAll" name="contactWay[]" value="" type="checkbox">
+                                        <input value="false" type="hidden"><span class="text"></span>
+                                    </label>
+                                </th>
+
+                                <th class="text-center">ID</th>
+                                <th class="text-center">栏目名称</th>
+                                <th class="text-center">状态</th>
+                                <th class="text-center">属性</th>
+                                <th class="text-center">所属模型</th>
+                                <th class="text-center">排序</th>
+                                <th class="text-center">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {volist name="cateRes" id="vo"}
+                            <tr id="{$vo.id}" pid="{$vo.pid}">
+                                <td align="center"><span class="open">+</span></td>
+                                <td align="center">
+                                    <label>
+                                        <input id="checkAll"  class="colored-blue"  name="itm[]" value="{$vo.id}" type="checkbox">
+                                        <input value="false" type="hidden"><span class="text"></span>
+                                    </label>
+                                </td>
+                                <td align="center">{$vo.id}</td>
+                                <td align="left">{if condition="$vo.pid != 0"} | {/if}<?php echo str_repeat('-',$vo['level']*6); ?><a href="{:url('content/lst',['cate_id'=>$vo['id'],'model_id'=>$vo['model_id']])}">{$vo.cate_name}</a> <a><button style="float: right" type="button" tooltip="添加配置" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '{:url('add',['cateid'=>$vo['id']])}'"> <i class="fa fa-plus"></i> 添加子栏目</a> </td>
+                                <td align="center"><a href="javascript:;" onclick="ajaxUpdate(this)" cateid="{$vo.id}"  {if condition="$vo.status == 1"}class="btn-primary btn-sm shiny" {else}class="btn btn-danger btn-sm shiny"{/if}>{if condition="$vo.status == 1"}显示 {else} 隐藏{/if}</a> </td>
+                                <td align="center">{if condition="$vo.cate_attr == 1"} 列表栏目 {elseif condition="$vo.cate_attr == 2"} 频道封面{else} 链接栏目{/if}</td>
+                                <td align="center">{$vo.model_name}</td>
+                                <td align="center">
+                                    <input name="sort[{$vo.id}]" type="text" value="{$vo.sort}" style="width:50px;text-align:center">
+                                </td>
+                                <td align="center" width="15%">
+                                    <a href="{:url('edit',['cateid'=>$vo['id']])}" class="btn btn-primary btn-sm shiny">
+                                        <i class="fa fa-edit"></i> 编辑
+                                    </a>
+                                    <a  onclick="ajaxdel(this)" id="{$vo['id']}" class="btn btn-danger btn-sm shiny">
+                                        <i class="fa fa-trash-o"></i> 删除
+                                    </a>
+                                </td>
+
+                            </tr>
+                            {/volist}
+
+                        </tbody>
+                    </table>
+                        <div style="padding: 10px 10px;position: relative;left: 76%;">
+                            <button  type="submit" class="btn btn-primary">保存信息</button>
+                        </div>
+                    </form>
+                    <div style="margin-top: 10px;text-align: right">
+
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+
+	    <!--Basic Scripts--> <!--先引入jquery再引入layer-->
+    <script src="__ADMIN__/style/jquery_002.js"></script>
+    <script src="__ADMIN__/plus/layer/layer.js"></script>
+    <script src="__ADMIN__/style/bootstrap.js"></script>
+    <script src="__ADMIN__/style/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__ADMIN__/style/beyond.js"></script>
+    
+
+
+</body></html>
+<script type="text/javascript">
+    //传递自身对象,实现ajax异步请求更新数据，（更新状态信息）
+    function ajaxUpdate(o) {
+            var cateid=$(o).attr("cateid");//$(o)表示自身 attr可以获取自身某个属性值,自身属性可以自定义值
+            $.ajax({
+                url:"{:url('Cate/changeStatus')}",
+                dataType:"json",
+                data:{"cateid":cateid},
+                type:"POST",
+                success:function(data) {
+
+                    if (data == 1)
+                    {
+                        $(o).attr("class","btn btn-danger btn-sm shiny");
+                        $(o).text("隐藏");
+                    }
+                    else
+                    {
+                        $(o).attr("class","btn-primary btn-sm shiny");
+                        $(o).text("显示");
+                    }
+                }
+
+            })
+    }
+
+    //单击复选框全选按钮
+    $("#checkAll").click(function(){
+        if($("#checkAll").attr("checked"))
+        {
+            //假如单选按钮已经checked,则表示要取消选择
+            $(".colored-blue").removeAttr("checked");
+        }
+        else
+        {
+            //单选按钮没有checked,则单击需要全选
+            $(".colored-blue").attr("checked","checked");
+        }
+    })
+
+
+    //点击显示伸缩子栏目
+    $("tr[pid!=0]").hide();
+    $('.open').click(function(){
+        //id获取的是当前点击的tr的id
+        var id =$(this).parents('tr').attr('id');
+      if($(this).text() == '+')
+      {
+          $(this).text('-');
+          //tr的pid = 当前点击的tr的id,则为子栏目,显示
+          $('tr[pid ='+id+']').show();
+      }
+      else {
+          $(this).text('+');
+          //tr的pid = 当前点击的tr的id,则为子栏目,隐藏
+          $('tr[pid ='+id+']').hide();
+          $.ajax({
+              type:"POST",
+              dataType:"json",
+              data:{cateid:id},
+              url:"{:url('Cate/ajaxLst')}",
+              success:function(data){
+                   var sonIds=[];//存放所有非顶级的栏目的id数组
+                   var idobj=$("tr[pid!=0]");//获取所有非顶级栏目
+                   idobj.each(function(k,v){
+                       //遍历非顶级栏目数组,存放id
+                       sonIds.push($(this).attr('id'));
+                  });
+                   //遍历返回的数据
+                   $.each(data,function(k,v){
+                    if($.inArray(v,sonIds))
+                    {
+                        //返回的数组中有在非顶级栏目的id数组中,则为点击栏目的子栏目
+                        $('tr[id='+v+']').hide();
+                        //使子栏目符号为+
+                        $('tr[id='+v+']').find('span:first').text('+');
+                    }
+                   });
+              }
+          });
+      }
+
+    })
+</script>
+
+//AJAX删除模型
+<script>
+    function ajaxdel(o){
+        layer.confirm('确认要删除该模型吗?', {icon: 3, title: '提示'}, function (index) {
+            var id=$(o).attr('id');
+            $.ajax({
+                url: "{:url('Cate/del')}",
+                type: "POST",
+                data: {
+                    'cateid':id
+                },
+                async: true,
+                dataType: "json",
+                success: function (data) {
+                    if (data == 1) {
+                        layer.msg('删除模型成功',{icon: 1});
+                        window.location.href="{:url('Cate/lst')}";
+                    }
+                    else {
+                        layer.msg('删除模型失败...',{icon: 2});
+                    }
+                }
+
+            })
+
+            layer.close(index);
+        });
+
+    }
+
+</script>

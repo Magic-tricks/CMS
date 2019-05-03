@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>童攀课堂提供最新版TPCMS官方安装程序</title>
+<link href="./style/install.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./style/jquery.js"></script>
+<link href="./style/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./style/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="./style/jquery.mousewheel.js"></script>
+<script type="text/javascript">
+var scroll_height = 0;
+function showmessage(message) {
+	document.getElementById('license').innerHTML += message+"<br/>";
+	document.getElementById("text-box").scrollTop = 500+scroll_height;
+	scroll_height += 40;
+}
+$(document).ready(function(){
+	//自定义滚定条
+	$('#text-box').perfectScrollbar();
+});
+</script>
+</head>
+
+<body>
+<div class="header">
+  <div class="layout">
+    <div class="title">
+      <h2>系统安装向导</h2>
+    </div>
+    <div class="version">版本: 目前最新版</div>
+  </div>
+</div>
+<div class="main">
+  <div class="step-box" id="step4">
+    <div class="text-nav">
+      <h1>Step.3</h1>
+      <h2>安装数据库</h2>
+      <h5>正在执行数据库安装</h5>
+    </div>
+    <div class="procedure-nav">
+      <div class="schedule-ico"><span class="a"></span><span class="c"></span><span class="d"></span></div>
+      <div class="schedule-point-now"><span class="a"></span><span class="c"></span><span class="d"></span></div>
+      <div class="schedule-point-bg"><span class="a"></span><span class="c"></span><span class="d"></span></div>
+      <div class="schedule-line-now"><em></em></div>
+      <div class="schedule-line-bg"></div>
+      <div class="schedule-text"><span class="a">检查安装环境</span><span class="c">创建数据库</span><span class="d">安装</span></div>
+    </div>
+  </div>
+  <div class="text-box" id="text-box">
+    <div class="license" id="license">数据表  tp_activity ... 创建成功 <br>数据表  tp_activity_detail ... 创建成功 <br>数据表  tp_address ... 创建成功 <br>数据表  tp_admin ... 创建成功 <br>数据表  tp_admin_log ... 创建成功 <br>数据表  tp_adv ... 创建成功 <br>数据表  tp_adv_click ... 创建成功 <br>数据表  tp_adv_position ... 创建成功 <br>数据表  tp_album_class ... 创建成功 <br>数据表  tp_album_pic ... 创建成功 <br>数据表  tp_area ... 创建成功 <br>数据表  tp_arrival_notice ... 创建成功 <br>数据表  tp_article ... 创建成功 <br>数据表  tp_article_class ... 创建成功 <br>数据表  tp_attribute ... 创建成功 <br>数据表  tp_attribute_value ... 创建成功 <br>数据表  tp_brand ... 创建成功 <br>数据表  tp_cart ... 创建成功 <br>数据表  tp_chat_log ... 创建成功 <br>数据表  tp_chat_msg ... 创建成功 <br>数据表  tp_circle ... 创建成功 <br>数据表  tp_circle_affix ... 创建成功 <br>数据表  tp_circle_class ... 创建成功 <br>数据表  tp_circle_explog ... 创建成功 <br>数据表  tp_circle_expmember ... 创建成功 <br>数据表  tp_circle_exptheme ... 创建成功 <br>数据表  tp_circle_fs ... 创建成功 <br>数据表  tp_circle_inform ... 创建成功 <br>数据表  tp_circle_like ... 创建成功 <br>数据表  tp_circle_mapply ... 创建成功 <br>数据表  tp_circle_member ... 创建成功 <br>数据表  tp_circle_ml ... 创建成功 <br>数据表  tp_circle_mldefault ... 创建成功 <br>数据表  tp_circle_mlref ... 创建成功 <br>数据表  tp_circle_recycle ... 创建成功 <br>数据表  tp_circle_thclass ... 创建成功 <br>数据表  tp_circle_theme ... 创建成功 <br>数据表  tp_circle_thg ... 创建成功 <br>数据表  tp_circle_thpoll ... 创建成功 <br>数据表  tp_circle_thpolloption ... 创建成功 <br>数据表  tp_circle_thpollvoter ... 创建成功 <br>数据表  tp_circle_threply ... 创建成功 <br>数据表  tp_cms_article ... 创建成功 <br>数据表  tp_cms_article_attitude ... 创建成功 <br>数据表  tp_cms_article_class ... 创建成功 <br>数据表  tp_cms_comment ... 创建成功 <br>数据表  tp_cms_comment_up ... 创建成功 <br>数据表  tp_cms_index_module ... 创建成功 <br>数据表  tp_cms_module ... 创建成功 <br>数据表  tp_cms_module_assembly ... 创建成功 <br>数据表  tp_cms_module_frame ... 创建成功 <br>数据表  tp_cms_navigation ... 创建成功 <br>数据表  tp_cms_picture ... 创建成功 <br>数据表  tp_cms_picture_class ... 创建成功 <br>数据表  tp_cms_picture_image ... 创建成功 <br>数据表  tp_cms_special ... 创建成功 <br>数据表  tp_cms_tag ... 创建成功 <br>数据表  tp_cms_tag_relation ... 创建成功 <br>数据表  tp_complain ... 创建成功 <br>数据表  tp_complain_subject ... 创建成功 <br>数据表  tp_complain_talk ... 创建成功 <br>数据表  tp_consult ... 创建成功 <br>数据表  tp_consult_type ... 创建成功 <br>数据表  tp_cron ... 创建成功 <br>数据表  tp_daddress ... 创建成功 <br>数据表  tp_delivery_order ... 创建成功 <br>数据表  tp_delivery_point ... 创建成功 <br>数据表  tp_document ... 创建成功 <br>数据表  tp_evaluate_goods ... 创建成功 <br>数据表  tp_evaluate_store ... 创建成功 <br>数据表  tp_exppoints_log ... 创建成功 <br>数据表  tp_express ... 创建成功 <br>数据表  tp_favorites ... 创建成功 <br>数据表  tp_flea ... 创建成功 <br>数据表  tp_flea_area ... 创建成功 <br>数据表  tp_flea_class ... 创建成功 <br>数据表  tp_flea_class_index ... 创建成功 <br>数据表  tp_flea_consult ... 创建成功 <br>数据表  tp_flea_favorites ... 创建成功 <br>数据表  tp_flea_upload ... 创建成功 <br>数据表  tp_flowstat ... 创建成功 <br>数据表  tp_flowstat_1 ... 创建成功 <br>数据表  tp_flowstat_2 ... 创建成功 <br>数据表  tp_gadmin ... 创建成功 <br>数据表  tp_goods ... 创建成功 <br>数据表  tp_goods_attr_index ... 创建成功 <br>数据表  tp_goods_browse ... 创建成功 <br>数据表  tp_goods_class ... 创建成功 <br>数据表  tp_goods_class_staple ... 创建成功 <br>数据表  tp_goods_class_tag ... 创建成功 <br>数据表  tp_goods_combo ... 创建成功 <br></div>
+  </div>
+  <div class="btn-box"><a href="javascript:void(0);" id="install_process" class="btn btn-primary">正在安装 ...</a></div>
+</div>
+<div class="footer">
+  <h6><a href="http://www.tongpankt.com/" target="_blank"></a></h6>
+</div>
+</body></html>

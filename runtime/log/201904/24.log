@@ -1,0 +1,3072 @@
+---------------------------------------------------------------
+[ 2019-04-24T12:15:20+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin
+[ info ] localhost/cms/public/index.php/admin [运行时间：0.119741s][吞吐率：8.35req/s] [内存消耗：2,332.40kb] [文件加载：68]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:15:24+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/login/index.html
+[ info ] localhost/cms/public/index.php/admin/login/index.html [运行时间：0.083920s][吞吐率：11.92req/s] [内存消耗：2,334.98kb] [文件加载：67]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /Applications/MAMP/htdocs/cms/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/login/login.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:15:24+08:00 ] 0.0.0.0 GET /cms/public/index.php/captcha.html
+[ info ] localhost/cms/public/index.php/captcha.html [运行时间：0.094006s][吞吐率：10.64req/s] [内存消耗：1,946.91kb] [文件加载：56]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'image/webp,*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/login/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /Applications/MAMP/htdocs/cms/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:15:29+08:00 ] 0.0.0.0 POST /cms/public/index.php/admin/login/index.html
+[ info ] localhost/cms/public/index.php/admin/login/index.html [运行时间：0.117773s][吞吐率：8.49req/s] [内存消耗：3,228.70kb] [文件加载：75]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'uname' => 'admin',
+  'password' => 'admin',
+  'code' => '478',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /Applications/MAMP/htdocs/cms/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000762s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.049783s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `uname` = 'admin' LIMIT 1 [ RunTime:0.001594s ]
+---------------------------------------------------------------
+[ 2019-04-24T12:15:32+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/index/index.html
+[ info ] localhost/cms/public/index.php/admin/index/index.html [运行时间：0.161805s][吞吐率：6.18req/s] [内存消耗：3,197.13kb] [文件加载：76]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/login/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/index/index.htm [ array (
+  0 => 'con',
+  1 => 'menuRes',
+  2 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000576s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.002777s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.001629s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group_access` [ RunTime:0.004832s ]
+[ sql ] [ SQL ] SELECT `auth_group_access`.`uid`,`auth_group_access`.`group_id`,`auth_group`.`title`,`auth_group`.`rules` FROM `tp_auth_group_access` `auth_group_access` INNER JOIN `tp_auth_group` `auth_group` ON `auth_group_access`.`group_id`=`auth_group`.`id` WHERE  `status` = 1  AND `auth_group_access`.`uid` = 1 [ RunTime:0.004393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.002808s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `pid` = 0  AND `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1 [ RunTime:0.001787s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 4 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 11 [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 14 [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (4,5,7,11,12,13,22,23,14,15,16,17,18,19,20,21)  AND `show` = 1  AND `pid` = 19 [ RunTime:0.000597s ]
+---------------------------------------------------------------
+[ 2019-04-24T12:15:32+08:00 ] 0.0.0.0 GET /cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/cms/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.034950s][吞吐率：28.61req/s] [内存消耗：1,929.41kb] [文件加载：57]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'identity',
+  'referer' => 'http://localhost/cms/public/static/admin/style/font-awesome.css',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:15:56+08:00 ] 0.0.0.0 GET /cms/public/index.php/index/index/index.html
+[ info ] localhost/cms/public/index.php/index/index/index.html [运行时间：0.190423s][吞吐率：5.25req/s] [内存消耗：3,587.77kb] [文件加载：76]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/default/index.htm [ array (
+  0 => 'temp',
+  1 => 'temp_static',
+  2 => 'cateRes',
+  3 => 'cateResBottom',
+  4 => 'confs',
+  5 => 'topCid',
+  6 => 'about',
+  7 => 'technology',
+  8 => 'news',
+  9 => 'produces',
+  10 => 'adStr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000826s ] mysql:host=127.0.0.1;dbname=cms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.001174s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT `value` FROM `tp_conf` WHERE  `ename` = 'temp' LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.002775s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `status` = 1 [ RunTime:0.001520s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 8  AND `status` = 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 11  AND `status` = 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 13  AND `status` = 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 14  AND `status` = 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0  AND `bottom_show` = 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1  AND `status` = 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 5  AND `status` = 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 15  AND `status` = 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf` [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_archives` [ RunTime:0.002811s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` ORDER BY id desc LIMIT 1 [ RunTime:0.001636s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_archives` WHERE  (  cate_id in (8,9,10) ) ORDER BY id desc LIMIT 12 [ RunTime:0.001490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad` [ RunTime:0.002380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad` WHERE  `id` = 13  AND `on` = 1 LIMIT 1 [ RunTime:0.001437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_ad_flash` [ RunTime:0.002861s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_ad_flash` WHERE  `ad_id` = 13 [ RunTime:0.001473s ]
+---------------------------------------------------------------
+[ 2019-04-24T12:51:07+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.042007s][吞吐率：23.81req/s] [内存消耗：2,206.47kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:51:09+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.041004s][吞吐率：24.39req/s] [内存消耗：2,155.71kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:51:13+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.034029s][吞吐率：29.39req/s] [内存消耗：2,206.56kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:51:14+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.036049s][吞吐率：27.74req/s] [内存消耗：2,155.71kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:51:16+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.035075s][吞吐率：28.51req/s] [内存消耗：2,206.56kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:51:23+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.039680s][吞吐率：25.20req/s] [内存消耗：2,155.71kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:51:26+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.036426s][吞吐率：27.45req/s] [内存消耗：2,153.76kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:51:51+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.038380s][吞吐率：26.06req/s] [内存消耗：2,153.76kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:52:19+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.036571s][吞吐率：27.34req/s] [内存消耗：2,155.57kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:52:19+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.033752s][吞吐率：29.63req/s] [内存消耗：2,155.57kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:52:19+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.033580s][吞吐率：29.78req/s] [内存消耗：2,155.57kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:52:19+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.034224s][吞吐率：29.22req/s] [内存消耗：2,155.57kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:52:27+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.034646s][吞吐率：28.86req/s] [内存消耗：2,153.76kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:52:57+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.035939s][吞吐率：27.82req/s] [内存消耗：2,202.46kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:52:57+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.034977s][吞吐率：28.59req/s] [内存消耗：2,208.38kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:53:02+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.037221s][吞吐率：26.87req/s] [内存消耗：2,202.60kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:53:02+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.033713s][吞吐率：29.66req/s] [内存消耗：2,208.52kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:53:03+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.037592s][吞吐率：26.60req/s] [内存消耗：2,202.60kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:53:03+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.033647s][吞吐率：29.72req/s] [内存消耗：2,208.52kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:53:03+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.037012s][吞吐率：27.02req/s] [内存消耗：2,202.60kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:53:04+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.033912s][吞吐率：29.49req/s] [内存消耗：2,208.52kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:53:08+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.036785s][吞吐率：27.18req/s] [内存消耗：2,202.60kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:53:08+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.034860s][吞吐率：28.69req/s] [内存消耗：2,208.52kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:53:11+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.033534s][吞吐率：29.82req/s] [内存消耗：2,209.39kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:53:12+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.035987s][吞吐率：27.79req/s] [内存消耗：2,202.60kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:53:12+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.034195s][吞吐率：29.24req/s] [内存消耗：2,208.52kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:53:46+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.031935s][吞吐率：31.31req/s] [内存消耗：2,209.39kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:53:56+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.062192s][吞吐率：16.08req/s] [内存消耗：2,722.36kb] [文件加载：78]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:54:10+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.036264s][吞吐率：27.58req/s] [内存消耗：2,209.39kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:54:11+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.037611s][吞吐率：26.59req/s] [内存消耗：2,202.60kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:54:11+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.032924s][吞吐率：30.37req/s] [内存消耗：2,208.52kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:54:19+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.034989s][吞吐率：28.58req/s] [内存消耗：2,209.39kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:54:21+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.036954s][吞吐率：27.06req/s] [内存消耗：2,202.63kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:54:21+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.035699s][吞吐率：28.01req/s] [内存消耗：2,208.52kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:54:33+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.039686s][吞吐率：25.20req/s] [内存消耗：2,206.56kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:54:34+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.034694s][吞吐率：28.82req/s] [内存消耗：2,202.60kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:54:34+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.033351s][吞吐率：29.98req/s] [内存消耗：2,208.52kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:54:46+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.038656s][吞吐率：25.87req/s] [内存消耗：2,722.33kb] [文件加载：78]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:55:13+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.034941s][吞吐率：28.62req/s] [内存消耗：2,203.06kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:55:13+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.041254s][吞吐率：24.24req/s] [内存消耗：2,721.45kb] [文件加载：78]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:55:21+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.033753s][吞吐率：29.63req/s] [内存消耗：2,156.17kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:55:23+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.041713s][吞吐率：23.97req/s] [内存消耗：2,721.45kb] [文件加载：78]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:55:25+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.034663s][吞吐率：28.85req/s] [内存消耗：2,156.17kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T12:55:29+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.032991s][吞吐率：30.31req/s] [内存消耗：2,154.22kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=4ba590a3eec555f1dacf00026bf4b00c',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:04:32+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin
+[ info ] localhost/cms/public/index.php/admin [运行时间：0.144969s][吞吐率：6.90req/s] [内存消耗：2,197.98kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:04:35+08:00 ] 0.0.0.0 GET /cms/public/index.php/admin/login/index.html
+[ info ] localhost/cms/public/index.php/admin/login/index.html [运行时间：0.037921s][吞吐率：26.37req/s] [内存消耗：2,199.67kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /Applications/MAMP/htdocs/cms/application/admin/controller/Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/admin/view/login/login.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:04:35+08:00 ] 0.0.0.0 GET /cms/public/index.php/captcha.html
+[ info ] localhost/cms/public/index.php/captcha.html [运行时间：0.056587s][吞吐率：17.67req/s] [内存消耗：1,946.91kb] [文件加载：56]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'image/webp,*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/admin/login/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /Applications/MAMP/htdocs/cms/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:08:02+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/
+[ info ] localhost/cms/public/index.php/install/ [运行时间：0.040227s][吞吐率：24.86req/s] [内存消耗：2,206.68kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:08:05+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.040776s][吞吐率：24.52req/s] [内存消耗：2,156.25kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:08:06+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/
+[ info ] localhost/cms/public/index.php/install/ [运行时间：0.036510s][吞吐率：27.39req/s] [内存消耗：2,206.84kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:18:53+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.039585s][吞吐率：25.26req/s] [内存消耗：2,156.25kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:19:04+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/
+[ info ] localhost/cms/public/index.php/install/ [运行时间：0.039318s][吞吐率：25.43req/s] [内存消耗：2,206.84kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:19:32+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.036368s][吞吐率：27.50req/s] [内存消耗：2,156.25kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:19:34+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/
+[ info ] localhost/cms/public/index.php/install/ [运行时间：0.034013s][吞吐率：29.40req/s] [内存消耗：2,206.84kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:19:40+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.052554s][吞吐率：19.03req/s] [内存消耗：2,154.34kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:19:55+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.062381s][吞吐率：16.03req/s] [内存消耗：2,668.91kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:20:12+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.040988s][吞吐率：24.40req/s] [内存消耗：2,668.63kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:20:21+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.047270s][吞吐率：21.16req/s] [内存消耗：2,666.76kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:22:07+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.040078s][吞吐率：24.95req/s] [内存消耗：2,202.77kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:22:07+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.035072s][吞吐率：28.51req/s] [内存消耗：2,207.23kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:22:13+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.035884s][吞吐率：27.87req/s] [内存消耗：2,203.43kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:22:13+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.033166s][吞吐率：30.15req/s] [内存消耗：2,209.34kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:22:17+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.033968s][吞吐率：29.44req/s] [内存消耗：2,203.43kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:22:17+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.033279s][吞吐率：30.05req/s] [内存消耗：2,209.34kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:22:29+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/index.html
+[ info ] localhost/cms/public/index.php/install/index/index.html [运行时间：0.033254s][吞吐率：30.07req/s] [内存消耗：2,210.03kb] [文件加载：66]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->index[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/index.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:22:30+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.042778s][吞吐率：23.38req/s] [内存消耗：2,668.86kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:23:15+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.040517s][吞吐率：24.68req/s] [内存消耗：2,669.92kb] [文件加载：77]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:24:23+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.037115s][吞吐率：26.94req/s] [内存消耗：2,158.51kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+  0 => 'envArr',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:25:22+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.086645s][吞吐率：11.54req/s] [内存消耗：2,304.35kb] [文件加载：67]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+  0 => 'envArr',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:25:46+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.036918s][吞吐率：27.09req/s] [内存消耗：2,302.19kb] [文件加载：67]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+  0 => 'envArr',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:26:16+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.038184s][吞吐率：26.19req/s] [内存消耗：2,302.83kb] [文件加载：67]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+  0 => 'envArr',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:32:09+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.035140s][吞吐率：28.46req/s] [内存消耗：2,158.58kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+  0 => 'envArr',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:32:25+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.035770s][吞吐率：27.96req/s] [内存消耗：2,159.02kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+  0 => 'envArr',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:37:56+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.034731s][吞吐率：28.79req/s] [内存消耗：2,160.97kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+  0 => 'envArr',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-24T21:38:59+08:00 ] 0.0.0.0 GET /cms/public/index.php/install/index/step1.html
+[ info ] localhost/cms/public/index.php/install/index/step1.html [运行时间：0.034939s][吞吐率：28.62req/s] [内存消耗：2,160.97kb] [文件加载：65]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/cms/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'install',
+    1 => 'index',
+    2 => 'step1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/cms/public/index.php/install/index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=4010070016; PHPSESSID=cb2a4cc7d33d4f1072ecbc8b4cce4274',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\install\controller\Index->step1[ /Applications/MAMP/htdocs/cms/application/install/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/cms/public/../application/install/view/index/step1.htm [ array (
+  0 => 'envArr',
+) ]
+[ info ] [ LOG ] INIT File

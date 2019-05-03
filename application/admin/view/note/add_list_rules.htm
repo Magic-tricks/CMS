@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <title>叶子空间</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Basic Styles-->
+    <link href="__ADMIN__/style/bootstrap.css" rel="stylesheet">
+    <link href="__ADMIN__/style/font-awesome.css" rel="stylesheet">
+    <link href="__ADMIN__/style/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__ADMIN__/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="__ADMIN__/style/demo.css" rel="stylesheet">
+    <link href="__ADMIN__/style/typicons.css" rel="stylesheet">
+    <link href="__ADMIN__/style/animate.css" rel="stylesheet">
+
+    <script src="__ADMIN__/style/jquery_002.js"></script>
+    <script src="__ADMIN__/plus/layer/layer.js"></script>
+
+</head>
+<body>
+	<!-- 头部 -->
+    {include file="common/head"}
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
+            {include file="common/left"}
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="#">系统</a>
+                    </li>
+                                        <li>
+                        <a href="{:url('noteList')}">节点管理</a>
+                    </li>
+                                        <li class="active">添加节点</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+                    
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-header bordered-bottom bordered-blue">
+                <span class="widget-caption">新增节点</span>
+            </div>
+            <div class="widget-body">
+                <div id="horizontal-form">
+                    <form class="form-horizontal" role="form" action="{:url('Note/addlistrules')}" method="post">
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">节点名</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="username" placeholder="" name="note_name" required="" type="text">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="group_id" class="col-sm-2 control-label no-padding-right">所属模型</label>
+                            <div class="col-sm-6">
+                                <select name="model_id" style="width: 100%;">
+                                    <option selected="selected" value="8">请选择模型</option>
+                                    {volist name="modelRes" id="model"}
+                                    <option value="{$model.id}">{$model.model_name}</option>
+                                    {/volist}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right"> 输出编码</label>
+                            <div class="col-sm-6">
+
+                                <div style="float: left;margin-left: 10px" class="radio">
+                                    <label>
+                                        <input checked="checked" value="UTF-8" class="inverted" name="output_encoding" type="radio">
+                                        <span class="text">UTF-8</span>
+                                    </label>
+                                </div>
+                                <div style="float: left;margin-left: 10px" class="radio">
+                                    <label>
+                                        <input value="GB2312" class="inverted" name="output_encoding" type="radio">
+                                        <span class="text">GB2312</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">列表URL</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="username" placeholder="" name="list_url" required="" type="text">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 动态页码使用(*)代替</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">页码配置</label>
+                            <div class="col-sm-6">
+                                <span style="float: left;margin-right: 5px;" class="control-label">从</span>
+                                <input class="form-control" style="width: 80px;text-align: center;float: left" placeholder="" value="1" name="start_page" required="" type="text">
+                                <span style="float: left;margin-right: 5px;margin-left: 5px;" class="control-label">到</span>
+                                <input class="form-control" style="width: 80px;text-align: center;float: left" placeholder="" name="end_page" required="" type="text">
+                                <span style="float: left;margin-right: 5px;margin-left: 5px;" class="control-label">每次递增</span>
+                                <input class="form-control" style="width: 80px;text-align: center;float: left" placeholder="" name="step" required="" type="text">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">采集范围</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="username" placeholder="" name="range" required="" type="text">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">URL采集规则</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="username" placeholder="" name="url" required="" type="text">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">缩略图采集规则</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="username" placeholder="" name="litpic" required="" type="text">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">保存信息并进入下一步设置</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+    <!--Basic Scripts-->
+    <script src="__ADMIN__/style/jquery_002.js"></script>
+    <script src="__ADMIN__/style/bootstrap.js"></script>
+    <script src="__ADMIN__/style/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__ADMIN__/style/beyond.js"></script>
+    
+
+
+</body></html>

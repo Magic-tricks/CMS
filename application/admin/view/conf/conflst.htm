@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html><head>
+	    <meta charset="utf-8">
+    <title>叶子空间</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Basic Styles-->
+    <link href="__ADMIN__/style/bootstrap.css" rel="stylesheet">
+    <link href="__ADMIN__/style/font-awesome.css" rel="stylesheet">
+    <link href="__ADMIN__/style/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__ADMIN__/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="__ADMIN__/style/demo.css" rel="stylesheet">
+    <link href="__ADMIN__/style/typicons.css" rel="stylesheet">
+    <link href="__ADMIN__/style/animate.css" rel="stylesheet">
+    
+</head>
+<body>
+	<!-- 头部 -->
+    {include file="common/head"}
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+            <!-- Page Sidebar -->
+            {include file="common/left"}
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="#">系统</a>
+                    </li>
+                                        <li class="active">配置管理</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+                    <div class="col-lg-12 col-xs-12">
+                        <div class="widget flat radius-bordered">
+                            <div class="widget-header bg-themeprimary">
+                                <span class="widget-caption"> 配置管理</span>
+                            </div>
+                            <form class="form-horizontal" enctype="multipart/form-data" role="form" action="" method="post">
+                            <div class="widget-body">
+                                <div class="widget-main ">
+                                    <div class="tabbable">
+                                        <ul class="nav nav-tabs  tabs-flat">
+                                            <li class="active"><a data-toggle="tab" href="#FlatTab-1" aria-expanded="true">基本信息设置</a></li>
+                                            <li class=""><a data-toggle="tab" href="#FlatTab-2" aria-expanded="false">联系方式</a></li>
+                                            <li class=""><a data-toggle="tab" href="#FlatTab-3" aria-expanded="false">SEO设置</a></li>
+                                        </ul>
+                                        <div class="tab-content  tabs-flat">
+                                             <div class="tab-pane active" id="FlatTab-1">
+                                                 <div>
+
+                                                         <?php foreach($confRes as $k => $v ):?>
+                                                         <?php if($v['cf_type'] ==1 ): ?>
+                                                             <?php if($v['dt_type'] ==1):?>
+                                                             <!--单行文本-->
+                                                             <div class="form-group">
+                                                                 <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                                 </label>
+                                                                 <div class=" col-lg-10">
+                                                                     <input class="form-control" id="Email" name="{$v['ename']}" value="{$v['value']}" type="text" value="">
+                                                                 </div>
+                                                             </div>
+                                                             <?php endif;?>
+
+                                                             <?php if($v['dt_type'] ==2): ?>
+                                                             <!--单选按钮-->
+                                                            <div class="form-group">
+                                                             <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                             </label>
+                                                             <div class="control-group">
+                                                                <?php $valuesArr=explode(",",$v['values']);
+                                                                    foreach($valuesArr as $k1 => $v1): ?>
+                                                                 <div style="float: left;padding-left: 10px" class="radio">
+                                                                     <label>
+                                                                         <input value="{$v1}" {if condition="$v1 == $v['value']"}checked="checked" {/if} name="{$v['ename']}" type="radio"><span class="text">{$v1}</span>
+                                                                     </label></div>
+                                                                    <?php endforeach?>
+                                                             </div>
+                                                            <div style="clear: both;"></div>
+                                                            </div>
+                                                             <?php endif;?>
+                                                             <?php if($v['dt_type'] ==3):?>
+                                                             <!--复选框-->
+                                                             <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                             </label>
+                                                             <div class="checkbox">
+                                                                 <?php $valuesArr=explode(",",$v['values']);
+                                                                        foreach($valuesArr as $v1):?>
+                                                                 <label>
+                                                                     <input <?php if(strstr($v['value'], ',')){ $valueArr=explode(",",$v['value']); foreach($valueArr as $v2){ if ( $v1 == $v2 ){ echo 'checked="checked"';} } } else { if( $v1 == $v['value'] ) echo 'checked="checked"'; }?> class="colored-blue" id="form-field-checkbox" name="{$v['ename']}[]" type="checkbox" value="{$v1}">
+                                                                     <input name="{$v['ename']}" type="hidden" value="false" ><span class="text">{$v1}</span>
+                                                                 </label>
+                                                                 <?php endforeach;?>
+                                                             </div>
+
+                                                             <?php endif;?>
+                                                             <?php if($v['dt_type'] ==4):?>
+                                                             <!--下拉菜单-->
+                                                             <div class="form-group">
+                                                                 <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                                 </label>
+                                                                 <div class=" col-lg-10">
+                                                                     <select class="form-control" name="{$v['ename']}">
+                                                                         <option>请选择</option>
+                                                                         <?php $valueArr=explode(",",$v['values']);
+                                                                                foreach ($valueArr as $v1): ?>
+                                                                         <option {if condition="$v1 == $v['value']"} selected="selected" {/if} >{$v1}</option>
+                                                                         <?php endforeach;?>
+                                                                     </select>
+                                                                 </div>
+                                                             </div>
+                                                             <?php endif;?>
+                                                             <?php if($v['dt_type'] ==5):?>
+                                                             <!--文本域-->
+                                                             <div class="form-group">
+                                                                 <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                                 </label>
+                                                                 <div class=" col-lg-10">
+                                                                     <textarea name="{$v['ename']}" class="form-control">{$v['value']}</textarea>
+                                                                 </div>
+                                                             </div>
+                                                             <?php endif;?>
+                                                             <?php if($v['dt_type'] ==6):?>
+                                                             <!--附件-->
+                                                             <div class="form-group">
+                                                                 <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                                 </label>
+                                                                 <div class=" col-lg-10">
+                                                                     <input  name="{$v['ename']}" type="file" value="" style="float:left">
+                                                                     {if condition="$v['value']"}<img width="60px" height="40px" src="__UPLOADS__/{$v['value']}"> {else/} 暂无缩略图{/if}
+                                                                 </div>
+                                                             </div>
+                                                             <?php endif;?>
+                                                         <?php endif; ?>
+                                                         <?php endforeach;?>
+
+                                                 </div>
+
+                                             </div>
+
+                                            <div class="tab-pane" id="FlatTab-2">                                                <div>
+
+                                                    <?php foreach($confRes as $k => $v ):?>
+                                                    <?php if($v['cf_type'] == 2): ?>
+                                                <?php if($v['dt_type'] ==1):?>
+                                                <!--单行文本-->
+                                                <div class="form-group">
+                                                    <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                    </label>
+                                                    <div class=" col-lg-10">
+                                                        <input class="form-control" id="Email" name="{$v['ename']}" value="{$v['value']}" type="text" value="">
+                                                    </div>
+                                                </div>
+                                                <?php endif;?>
+
+                                                <?php if($v['dt_type'] ==2): ?>
+                                                <!--单选按钮-->
+                                                <div class="form-group">
+                                                    <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                    </label>
+                                                    <div class="control-group">
+                                                        <?php $valuesArr=explode(",",$v['values']);
+                                                                    foreach($valuesArr as $k1 => $v1): ?>
+                                                        <div style="float: left;padding-left: 10px" class="radio">
+                                                            <label>
+                                                                <input value="{$v1}" {if condition="$v1 == $v['value']"}checked="checked" {/if} name="{$v['ename']}" type="radio"><span class="text">{$v1}</span>
+                                                            </label></div>
+                                                        <?php endforeach?>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                                <?php endif;?>
+                                                <?php if($v['dt_type'] ==3):?>
+                                                <!--复选框-->
+                                                <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                </label>
+                                                <div class="checkbox">
+                                                    <?php $valuesArr=explode(",",$v['values']);
+                                                                        foreach($valuesArr as $v1):?>
+                                                    <label>
+                                                        <input <?php if(strstr($v['value'], ',')){ $valueArr=explode(",",$v['value']); foreach($valueArr as $v2){ if ( $v1 == $v2 ){ echo 'checked="checked"';} } } else { if( $v1 == $v['value'] ) echo 'checked="checked"'; }?> class="colored-blue" id="form-field-checkbox" name="{$v['ename']}[]" type="checkbox" value="{$v1}">
+                                                        <input  type="hidden" value="false" ><span class="text">{$v1}</span>
+                                                    </label>
+                                                    <?php endforeach;?>
+                                                </div>
+
+                                                <?php endif;?>
+                                                <?php if($v['dt_type'] ==4):?>
+                                                <!--下拉菜单-->
+                                                <div class="form-group">
+                                                    <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                    </label>
+                                                    <div class=" col-lg-10">
+                                                        <select class="form-control" name="{$v['ename']}">
+                                                            <option>请选择</option>
+                                                            <?php $valueArr=explode(",",$v['values']);
+                                                                                foreach ($valueArr as $v1): ?>
+                                                            <option {if condition="$v1 == $v['value']"} selected="selected" {/if} >{$v1}</option>
+                                                            <?php endforeach;?>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <?php endif;?>
+                                                <?php if($v['dt_type'] ==5):?>
+                                                <!--文本域-->
+                                                <div class="form-group">
+                                                    <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                    </label>
+                                                    <div class=" col-lg-10">
+                                                        <textarea name="{$v['ename']}" class="form-control">{$v['value']}</textarea>
+                                                    </div>
+                                                </div>
+                                                <?php endif;?>
+                                                <?php if($v['dt_type'] ==6):?>
+                                                <!--附件-->
+                                                <div class="form-group">
+                                                    <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                    </label>
+                                                    <div class=" col-lg-10">
+                                                        <input  name="{$v['ename']}" type="file" value="">
+                                                    </div>
+                                                </div>
+                                                <?php endif;?>
+                                                    <?php endif; ?>
+                                                    <?php endforeach;?>
+
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="FlatTab-3">
+                                                <div>
+
+                                                    <?php foreach($confRes as $k => $v ):?>
+                                                    <?php if($v['cf_type'] == 3): ?>
+                                                    <?php if($v['dt_type'] ==1):?>
+                                                    <!--单行文本-->
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                        </label>
+                                                        <div class=" col-lg-10">
+                                                            <input class="form-control" id="Email" name="{$v['ename']}" value="{$v['value']}" type="text" value="">
+                                                        </div>
+                                                    </div>
+                                                    <?php endif;?>
+
+                                                    <?php if($v['dt_type'] ==2): ?>
+                                                    <!--单选按钮-->
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                        </label>
+                                                        <div class="control-group">
+                                                            <?php $valuesArr=explode(",",$v['values']);
+                                                                    foreach($valuesArr as $k1 => $v1): ?>
+                                                            <div style="float: left;padding-left: 10px" class="radio">
+                                                                <label>
+                                                                    <input value="{$v1}" {if condition="$v1 == $v['value']"}checked="checked" {/if} name="{$v['ename']}" type="radio"><span class="text">{$v1}</span>
+                                                                </label></div>
+                                                            <?php endforeach?>
+                                                        </div>
+                                                        <div style="clear: both;"></div>
+                                                    </div>
+                                                    <?php endif;?>
+                                                    <?php if($v['dt_type'] ==3):?>
+                                                    <!--复选框-->
+                                                    <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                    </label>
+                                                    <div class="checkbox">
+                                                        <?php $valuesArr=explode(",",$v['values']);
+                                                                        foreach($valuesArr as $v1):?>
+                                                        <label>
+                                                            <input <?php if(strstr($v['value'], ',')){ $valueArr=explode(",",$v['value']); foreach($valueArr as $v2){ if ( $v1 == $v2 ){ echo 'checked="checked"';} } } else { if( $v1 == $v['value'] ) echo 'checked="checked"'; }?> class="colored-blue" id="form-field-checkbox" name="{$v['ename']}[]" type="checkbox" value="{$v1}">
+                                                            <input name="{$v['ename']}" type="hidden" value="false" ><span class="text">{$v1}</span>
+                                                        </label>
+                                                        <?php endforeach;?>
+                                                    </div>
+
+                                                    <?php endif;?>
+                                                    <?php if($v['dt_type'] ==4):?>
+                                                    <!--下拉菜单-->
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                        </label>
+                                                        <div class=" col-lg-10">
+                                                            <select class="form-control" name="{$v['ename']}">
+                                                                <option>请选择</option>
+                                                                <?php $valueArr=explode(",",$v['values']);
+                                                                                foreach ($valueArr as $v1): ?>
+                                                                <option {if condition="$v1 == $v['value']"} selected="selected" {/if} >{$v1}</option>
+                                                                <?php endforeach;?>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <?php endif;?>
+                                                    <?php if($v['dt_type'] ==5):?>
+                                                    <!--文本域-->
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                        </label>
+                                                        <div class=" col-lg-10">
+                                                            <textarea name="{$v['ename']}" class="form-control">{$v['value']}</textarea>
+                                                        </div>
+                                                    </div>
+                                                    <?php endif;?>
+                                                    <?php if($v['dt_type'] ==6):?>
+                                                    <!--附件-->
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2"><?php echo $v["cname"].' :'?>
+                                                        </label>
+                                                        <div class=" col-lg-10">
+                                                            <input  name="{$v['ename']}" type="file" value="">
+                                                        </div>
+                                                    </div>
+                                                    <?php endif;?>
+                                                    <?php endif; ?>
+                                                    <?php endforeach;?>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                   <div style="clear: both;"></div>
+                                       <center > <button style="margin-top: 10px" class="btn shiny btn-primary " type="submit">保存信息</button></center>
+                                   
+
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                	                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+
+	    <!--Basic Scripts-->
+    <script src="__ADMIN__/style/jquery_002.js"></script>
+    <script src="__ADMIN__/style/bootstrap.js"></script>
+    <script src="__ADMIN__/style/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__ADMIN__/style/beyond.js"></script>
+    
+
+
+</body></html>

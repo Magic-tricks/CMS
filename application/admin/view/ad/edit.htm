@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html><head>
+	    <meta charset="utf-8">
+    <title>叶子空间</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Basic Styles-->
+    <link href="__ADMIN__/style/bootstrap.css" rel="stylesheet">
+    <link href="__ADMIN__/style/font-awesome.css" rel="stylesheet">
+    <link href="__ADMIN__/style/weather-icons.css" rel="stylesheet">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__ADMIN__/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="__ADMIN__/style/demo.css" rel="stylesheet">
+    <link href="__ADMIN__/style/typicons.css" rel="stylesheet">
+    <link href="__ADMIN__/style/animate.css" rel="stylesheet">
+
+    <!--Basic Scripts--> <!--先引入jquery再引入layer-->
+    <script src="__ADMIN__/style/jquery_002.js"></script>
+    <script src="__ADMIN__/plus/layer/layer.js"></script>
+    <script src="__ADMIN__/style/bootstrap.js"></script>
+    <script src="__ADMIN__/style/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__ADMIN__/style/beyond.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+    {include file="common/head"}
+
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
+            {include file="common/left"}
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="#">系统</a>
+                    </li>
+                                        <li>
+                        <a href="{:url('lst')}">广告管理</a>
+                    </li>
+                                        <li class="active">修改广告</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+                    
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-header bordered-bottom bordered-blue">
+                <span class="widget-caption">修改广告</span>
+            </div>
+            <div class="widget-body">
+                <div id="horizontal-form">
+                    <form class="form-horizontal" enctype="multipart/form-data" role="form" action="" method="post">
+                        <input name="id" value="{$adRes.id}" type="hidden">
+                        <input name="oldImgSrc" value="{$adRes.img_src}" type="hidden">
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">所属广告位</label>
+                            <div class="col-sm-6">
+                                <select name="adpos_id">
+                                    <option value="0">
+                                        未选择
+                                    </option>
+                                    {volist name="adPosRes" id="adPos"}
+                                    <option  {if condition="$adRes['adpos_id'] == $adPos['id']"} selected="selected" {/if} value="{$adPos.id}">
+                                        {$adPos.name}
+                                    </option>
+                                    {/volist}
+                                </select>
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">广告名称</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" value="{$adRes.ad_name}" id="username" placeholder="" name="ad_name"  type="text">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">是否启用</label>
+                            <div class="col-sm-6">
+                                <div style="float: left;" class="radio"><label>
+                                    <input value="1" {if condition="$adRes['on'] == 1"} checked="checked" {/if} name="on" type="radio">
+                                    <span class="text">启用 </span>
+                                </label>
+                                </div><div style="float: left;margin-left: 6px;" class="radio"><label>
+                                <input value="0" {if condition="$adRes['on'] == 0"} checked="checked" {/if} name="on" type="radio">
+                                <span class="text">禁用</span>
+                            </label>
+                            </div>
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">广告类型</label>
+                            <div class="col-sm-6">
+                                {if condition="$adRes['type'] == 1"}
+                                <div style="float: left;" class="radio">
+                                    <label>
+                                    <input id="img" value="1" checked="checked" checked="checked" name="type" type="radio">
+                                    <span class="text">图片 </span>
+                                </label>
+                                </div>
+                                {else}
+                                <div style="float: left;margin-left: 6px;" class="radio"><label>
+                                <input id="lh" checked="checked" value="2" name="type" type="radio">
+                                <span class="text">轮换</span>
+                                </label>
+                                </div>
+                                {/if}
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+
+                        {if condition="$adRes['type'] == 1"}
+
+                        <div class="img">
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">图片</label>
+                            <div class="col-sm-6">
+                                <input class="help-block col-sm-4" placeholder="" name="img_src"  type="file">
+                            </div>
+
+                            <p class="help-block col-sm-4 red">* 必填</p>
+
+                        </div>
+
+                            <div class="form-group">
+
+                                <div class="col-sm-6 col-sm-offset-2">
+                                    <img src="__INDEX__/ad/{$adRes.img_src}" width="100">
+                                </div>
+
+
+                            </div>
+
+
+
+                        <div class="form-group">
+                            <label for="username" class="col-sm-2 control-label no-padding-right">链接</label>
+                            <div class="col-sm-6">
+                                <input class="form-control"  placeholder="" name="link"  type="text">
+                            </div>
+                            <p class="help-block col-sm-4 red">* 必填</p>
+                        </div>
+                        </div>
+
+                        {else}
+
+                            {if condition="$adFlashRes"}
+                            {volist name="$adFlashRes" id="adFlash"}
+                            <div class="lh" style="">
+                            <div class="form-group" >
+                                <label onclick="ajaxdel(this)" for="username" id="{$adFlash.id}" class="col-sm-2 control-label no-padding-right"><a href="javascript:;" onclick="dt(this)">{if condition="$i==1"}[+]{else}[-]{/if}</a></label>
+                                <div class="col-sm-6">
+                                    <span>图片:</span>
+                                    <!--<input style="display: inline;" class="help-block" placeholder="" name="fimg_src[]"  type="file">-->
+                                    <img src="__INDEX__/ad/{$adFlash.fimg_src}" width="100">
+                                    <span style="display: block;">链接:</span>
+                                    <input style="display: inline;width: 260px;" value="{$adFlash.flink}" class="form-control" placeholder="" name="old_flink[{$adFlash.id}]"  type="text">
+
+                                </div>
+                                <p class="help-block col-sm-4 red">* 必填</p>
+                            </div>
+                            </div>
+                            {/volist}
+                            {/if}
+
+                        {/if}
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">保存信息</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+
+	    <!--Basic Scripts-->
+    <script src="__ADMIN__/style/jquery_002.js"></script>
+    <script src="__ADMIN__/style/bootstrap.js"></script>
+    <script src="__ADMIN__/style/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__ADMIN__/style/beyond.js"></script>
+    
+
+
+</body></html>
+
+<script>
+    $("#img").click(function () {
+        $(".img").show();
+        $(".lh").hide();
+    });
+    $("#lh").click(function () {
+        $(".lh").show();
+        $(".img").hide();
+    });
+
+    function dt(o){
+        // 查找当前元素上上级元素
+        var div =   $(o).parent().parent();
+        // 如果为+则克隆找到到的div，否则删除
+        if ($(o).html() === '[+]'){
+            var newDiv  =   '<div class="form-group"><label for="username" class="col-sm-2 control-label no-padding-right"><a href="javascript:;" onclick="dt(this);">[-]</a></label><div class="col-sm-6 help-block"><span>图片：</span><input  style="display:inline;" placeholder="" name="fimg_src[]"  type="file"><span style="display: block">链接：</span><input class="form-control" style="display:inline; width:300px;" placeholder="" value="" name="flink[]"  type="text"></div></div>';
+
+            div.after(newDiv);
+        }else{
+            var label   =   $(o).parent();
+            if (!$(label).attr('id'))
+            {
+                div.remove();
+            }
+
+
+        }
+    }
+</script>
+
+
+//AJAX删除广告
+<script>
+    function ajaxdel(o){
+        layer.confirm('确认要删除该模型吗?', {icon: 3, title: '提示'}, function (index) {
+            var id=$(o).attr('id');
+            $.ajax({
+                url: "{:url('Ad/ajaxdel')}",
+                type: "POST",
+                data: {
+                    'id':id
+                },
+                async: true,
+                dataType: "json",
+                success: function (data) {
+                    if (data == 1) {
+                        layer.msg('删除广告成功',{icon: 1});
+                        var div =   $(o).parent();
+                        div.remove();
+                        //window.location.href="{:url('Cate/lst')}";
+                    }
+                    else {
+
+                        layer.msg('删除广告失败...',{icon: 2});
+                    }
+                }
+
+            })
+
+            layer.close(index);
+        });
+
+    }
+
+</script>
